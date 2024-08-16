@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 15px;
+}
+.container{
+    /* kya yaha relative position ki jarurat thi */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    /* kya z-index ki jarutat thi */
+    /* z-index: -1; */
+}
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.background{
+    transform: translateZ(-40px) scale(4);
+}
+.foreground{
+    transform: translateZ(-30px) scale(3);
+}
+#head{
+    position: absolute;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 170px;
+    letter-spacing: 10px;
+    font-weight: 900;
+    top: 80px;
+    text-shadow: 0 0 0 0.3 rgba(0, 0, 255, 0.3);
+}
+.sec{
+    background-color: rgba(25, 25, 25);
+    color: white;
+    position: absolute;
+    
+}
+
+.h2{
+    font-size: 80px;
+    margin: 100px;
+}
+.text{
+    font-size: 20px;
+    margin: 100px;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline;
+    transform: translateX(-50%);
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    padding: 10px;
+}
+.bag{
+    position: relative;
+    background-attachment: fixed;
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    
+}
+    
+.bg1{
+    background-image: url(sport-1.jpg);
+    
+}
+.bg2{
+    background-image: url(sport-2.webp);
+}
+.bg3{
+    background-image: url(sports-3.jpg);
+}
+
+
+
+
+
+
+
+
+
+
